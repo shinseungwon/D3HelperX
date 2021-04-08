@@ -40,11 +40,19 @@ namespace D3HelperX
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cbp1 = new System.Windows.Forms.CheckBox();
+            this.cbp2 = new System.Windows.Forms.CheckBox();
+            this.cbp3 = new System.Windows.Forms.CheckBox();
+            this.cbp4 = new System.Windows.Forms.CheckBox();
+            this.cbpL = new System.Windows.Forms.CheckBox();
+            this.cbpR = new System.Windows.Forms.CheckBox();
+            this.btn_about = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_start
             // 
-            this.btn_start.Location = new System.Drawing.Point(33, 128);
+            this.btn_start.Location = new System.Drawing.Point(33, 130);
             this.btn_start.Name = "btn_start";
             this.btn_start.Size = new System.Drawing.Size(50, 23);
             this.btn_start.TabIndex = 0;
@@ -54,7 +62,7 @@ namespace D3HelperX
             // 
             // btn_stop
             // 
-            this.btn_stop.Location = new System.Drawing.Point(89, 128);
+            this.btn_stop.Location = new System.Drawing.Point(89, 130);
             this.btn_stop.Name = "btn_stop";
             this.btn_stop.Size = new System.Drawing.Size(50, 23);
             this.btn_stop.TabIndex = 1;
@@ -101,7 +109,7 @@ namespace D3HelperX
             // lb_state
             // 
             this.lb_state.AutoSize = true;
-            this.lb_state.Location = new System.Drawing.Point(12, 161);
+            this.lb_state.Location = new System.Drawing.Point(146, 163);
             this.lb_state.Name = "lb_state";
             this.lb_state.Size = new System.Drawing.Size(11, 15);
             this.lb_state.TabIndex = 10;
@@ -175,11 +183,98 @@ namespace D3HelperX
             this.comboBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.comboBox_KeyPress);
             this.comboBox4.KeyUp += new System.Windows.Forms.KeyEventHandler(this.comboBox_KeyUp);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(145, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 15);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "pause( ` )";
+            // 
+            // cbp1
+            // 
+            this.cbp1.AutoSize = true;
+            this.cbp1.Location = new System.Drawing.Point(146, 30);
+            this.cbp1.Name = "cbp1";
+            this.cbp1.Size = new System.Drawing.Size(33, 19);
+            this.cbp1.TabIndex = 16;
+            this.cbp1.Text = "1";
+            this.cbp1.UseVisualStyleBackColor = true;
+            // 
+            // cbp2
+            // 
+            this.cbp2.AutoSize = true;
+            this.cbp2.Location = new System.Drawing.Point(146, 50);
+            this.cbp2.Name = "cbp2";
+            this.cbp2.Size = new System.Drawing.Size(33, 19);
+            this.cbp2.TabIndex = 17;
+            this.cbp2.Text = "2";
+            this.cbp2.UseVisualStyleBackColor = true;
+            // 
+            // cbp3
+            // 
+            this.cbp3.AutoSize = true;
+            this.cbp3.Location = new System.Drawing.Point(146, 70);
+            this.cbp3.Name = "cbp3";
+            this.cbp3.Size = new System.Drawing.Size(33, 19);
+            this.cbp3.TabIndex = 18;
+            this.cbp3.Text = "3";
+            this.cbp3.UseVisualStyleBackColor = true;
+            // 
+            // cbp4
+            // 
+            this.cbp4.AutoSize = true;
+            this.cbp4.Location = new System.Drawing.Point(146, 90);
+            this.cbp4.Name = "cbp4";
+            this.cbp4.Size = new System.Drawing.Size(33, 19);
+            this.cbp4.TabIndex = 19;
+            this.cbp4.Text = "4";
+            this.cbp4.UseVisualStyleBackColor = true;
+            // 
+            // cbpL
+            // 
+            this.cbpL.AutoSize = true;
+            this.cbpL.Location = new System.Drawing.Point(146, 110);
+            this.cbpL.Name = "cbpL";
+            this.cbpL.Size = new System.Drawing.Size(32, 19);
+            this.cbpL.TabIndex = 20;
+            this.cbpL.Text = "L";
+            this.cbpL.UseVisualStyleBackColor = true;
+            // 
+            // cbpR
+            // 
+            this.cbpR.AutoSize = true;
+            this.cbpR.Location = new System.Drawing.Point(146, 130);
+            this.cbpR.Name = "cbpR";
+            this.cbpR.Size = new System.Drawing.Size(33, 19);
+            this.cbpR.TabIndex = 21;
+            this.cbpR.Text = "R";
+            this.cbpR.UseVisualStyleBackColor = true;
+            // 
+            // btn_about
+            // 
+            this.btn_about.Location = new System.Drawing.Point(33, 159);
+            this.btn_about.Name = "btn_about";
+            this.btn_about.Size = new System.Drawing.Size(106, 23);
+            this.btn_about.TabIndex = 22;
+            this.btn_about.Text = "about";
+            this.btn_about.UseVisualStyleBackColor = true;
+            this.btn_about.Click += new System.EventHandler(this.btn_about_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(253, 185);
+            this.ClientSize = new System.Drawing.Size(205, 193);
+            this.Controls.Add(this.btn_about);
+            this.Controls.Add(this.cbpR);
+            this.Controls.Add(this.cbpL);
+            this.Controls.Add(this.cbp4);
+            this.Controls.Add(this.cbp3);
+            this.Controls.Add(this.cbp2);
+            this.Controls.Add(this.cbp1);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.comboBox2);
@@ -191,9 +286,11 @@ namespace D3HelperX
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_stop);
             this.Controls.Add(this.btn_start);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "D3HelperX";
             this.TopMost = true;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,6 +309,14 @@ namespace D3HelperX
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.CheckBox cbp1;
+        private System.Windows.Forms.CheckBox cbp2;
+        private System.Windows.Forms.CheckBox cbp3;
+        private System.Windows.Forms.CheckBox cbp4;
+        private System.Windows.Forms.CheckBox cbpL;
+        private System.Windows.Forms.CheckBox cbpR;
+        private System.Windows.Forms.Button btn_about;
     }
 }
 
