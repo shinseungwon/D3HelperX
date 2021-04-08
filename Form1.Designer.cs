@@ -267,7 +267,8 @@ namespace D3HelperX
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(205, 193);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(202, 193);
             this.Controls.Add(this.btn_about);
             this.Controls.Add(this.cbpR);
             this.Controls.Add(this.cbpL);
@@ -287,8 +288,10 @@ namespace D3HelperX
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_stop);
             this.Controls.Add(this.btn_start);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "D3HelperX";
             this.TopMost = true;
